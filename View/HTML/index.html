@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link rel="stylesheet" href="../CSS/cyberpunk-2077.css" />
+      <link rel="shortcut icon" href="#">
+      <script src="../../JavaScript/main.js" defer></script>
+      <script src="../../JavaScript/POP.js" defer></script>
+      <script src="../../JavaScript/form.js" defer></script>
+      <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   </head>
+   <body>
+      <div id="appId" class="cyberpunk black">
+         <h1 class="cyberpunk glitched">BATTLESHIP GAME</h1>
+         <table border="1" id="idTable" class="cyberpunk scannedh">
+            <tr id="fila_0">
+               <td id="id_0_0"></td>
+               <td id="id_0_1"></td>
+               <td id="id_0_2"></td>
+               <td id="id_0_3"></td>
+               <td id="id_0_4"></td>
+               <td id="id_0_5"></td>
+               <td id="id_0_6"></td>
+               <td id="id_0_7"></td>
+               <td id="id_0_8"></td>
+               <td id="id_0_9"></td>
+            </tr>
+            <tr id="fila_1">
+               <td id="id_1_0"></td>
+               <td id="id_1_1"></td>
+               <td id="id_1_2"></td>
+               <td id="id_1_3"></td>
+               <td id="id_1_4"></td>
+               <td id="id_1_5"></td>
+               <td id="id_1_6"></td>
+               <td id="id_1_7"></td>
+               <td id="id_1_8"></td>
+               <td id="id_1_9"></td>
+            </tr>
+            <tr id="fila_2">
+               <td id="id_2_0"></td>
+               <td id="id_2_1"></td>
+               <td id="id_2_2"></td>
+               <td id="id_2_3"></td>
+               <td id="id_2_4"></td>
+               <td id="id_2_5"></td>
+               <td id="id_2_6"></td>
+               <td id="id_2_7"></td>
+               <td id="id_2_8"></td>
+               <td id="id_2_9"></td>
+            </tr>
+            <tr id="fila_3">
+               <td id="id_3_0"></td>
+               <td id="id_3_1"></td>
+               <td id="id_3_2"></td>
+               <td id="id_3_3"></td>
+               <td id="id_3_4"></td>
+               <td id="id_3_5"></td>
+               <td id="id_3_6"></td>
+               <td id="id_3_7"></td>
+               <td id="id_3_8"></td>
+               <td id="id_3_9"></td>
+            </tr>
+            <tr id="fila_4">
+               <td id="id_4_0"></td>
+               <td id="id_4_1"></td>
+               <td id="id_4_2"></td>
+               <td id="id_4_3"></td>
+               <td id="id_4_4"></td>
+               <td id="id_4_5"></td>
+               <td id="id_4_6"></td>
+               <td id="id_4_7"></td>
+               <td id="id_4_8"></td>
+               <td id="id_4_9"></td>
+            </tr>
+            <tr id="fila_5">
+               <td id="id_5_0"></td>
+               <td id="id_5_1"></td>
+               <td id="id_5_2"></td>
+               <td id="id_5_3"></td>
+               <td id="id_5_4"></td>
+               <td id="id_5_5"></td>
+               <td id="id_5_6"></td>
+               <td id="id_5_7"></td>
+               <td id="id_5_8"></td>
+               <td id="id_5_9"></td>
+            </tr>
+            <tr id="fila_6">
+               <td id="id_6_0"></td>
+               <td id="id_6_1"></td>
+               <td id="id_6_2"></td>
+               <td id="id_6_3"></td>
+               <td id="id_6_4"></td>
+               <td id="id_6_5"></td>
+               <td id="id_6_6"></td>
+               <td id="id_6_7"></td>
+               <td id="id_6_8"></td>
+               <td id="id_6_9"></td>
+            </tr>
+            <tr id="fila_7">
+               <td id="id_7_0"></td>
+               <td id="id_7_1"></td>
+               <td id="id_7_2"></td>
+               <td id="id_7_3"></td>
+               <td id="id_7_4"></td>
+               <td id="id_7_5"></td>
+               <td id="id_7_6"></td>
+               <td id="id_7_7"></td>
+               <td id="id_7_8"></td>
+               <td id="id_7_9"></td>
+            </tr>
+            <tr id="fila_8">
+               <td id="id_8_0"></td>
+               <td id="id_8_1"></td>
+               <td id="id_8_2"></td>
+               <td id="id_8_3"></td>
+               <td id="id_8_4"></td>
+               <td id="id_8_5"></td>
+               <td id="id_8_6"></td>
+               <td id="id_8_7"></td>
+               <td id="id_8_8"></td>
+               <td id="id_8_9"></td>
+            </tr>
+            <tr id="fila_9">
+               <td id="id_9_0"></td>
+               <td id="id_9_1"></td>
+               <td id="id_9_2"></td>
+               <td id="id_9_3"></td>
+               <td id="id_9_4"></td>
+               <td id="id_9_5"></td>
+               <td id="id_9_6"></td>
+               <td id="id_9_7"></td>
+               <td id="id_9_8"></td>
+               <td id="id_9_9"></td>
+            </tr>
+         </table>
+         <br />
+         <h3 id="actualScore" class="cyberpunk"></h3>
+         <div id="buttons" class="cyberpunk" style="background-color: #163547">
+            <button onclick="showDemo()" class="cyberpunk2077 red">
+            Show Demo
+            </button>
+            <button onclick="showInfo()" class="cyberpunk2077 green">
+            Show information
+            </button>
+            <button onclick="showAuthor()" class="cyberpunk2077 purple">
+            Show Author</button
+               ><br />
+            <button onclick="showPlayer()" class="cyberpunk2077 blue">
+            Show Player
+            </button>
+         </div>
+      </div>
+      <div class="cyberpunk black" id="formId">
+         <h1 class="cyberpunk glitched">BATTLESHIP GAME</h1>
+         <form name="myForm" id="formId" action="" method="get" style="max-width: 500px">
+            <input
+               class="cyberpunk"
+               type="text"
+               placeholder="Name"
+               name="name"
+               id="nameId"
+               />
+            <input
+               class="cyberpunk"
+               type="text"
+               placeholder="Surname"
+               name="surname"
+               id="surnameId"
+               required
+               />
+            <input
+               class="cyberpunk"
+               type="text"
+               placeholder="Age"
+               name="age"
+               id="ageId"
+               />
+            <button
+               id="formButton"
+               type="submit"
+               name="Send"
+               class="cyberpunk2077 red"
+               >
+            LOG IN_
+            </button>
+            <label class="cyberbunk" style="float: right; margin-top: 20px"
+               >Developed by <a href="#">Alberto Martos</a></label
+               >
+         </form>
+      </div>
+      <div class="cyberpunk" id="idRules">
+         <h1 class="cyberpunk glitched">RULES</h1>
+      </div>
+      <div class="cyberpunk black" id="idRules2">
+         <ol class="cyberpunk">
+            <li>
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+               fringilla porttitor libero, feugiat mattis velit placerat a. Sed a
+               pharetra ex. Nulla pharetra porta sapien volutpat eleifend.
+               Suspendisse sed nisl cursus, laoreet arcu bibendum, auctor elit.
+               Aliquam sed purus odio. Cras eget placerat leo. Aliquam lectus erat,
+               pretium id nunc non, finibus fermentum risus. Nullam porttitor quis
+               justo at euismod."
+            </li>
+            <li>
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+               fringilla porttitor libero, feugiat mattis velit placerat a. Sed a
+               pharetra ex. Nulla pharetra porta sapien volutpat eleifend.
+               Suspendisse sed nisl cursus, laoreet arcu bibendum, auctor elit.
+               Aliquam sed purus odio. Cras eget placerat leo. Aliquam lectus erat,
+               pretium id nunc non, finibus fermentum risus. Nullam porttitor quis
+               justo at euismod."
+            </li>
+            <li>
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+               fringilla porttitor libero, feugiat mattis velit placerat a. Sed a
+               pharetra ex. Nulla pharetra porta sapien volutpat eleifend.
+               Suspendisse sed nisl cursus, laoreet arcu bibendum, auctor elit.
+               Aliquam sed purus odio. Cras eget placerat leo. Aliquam lectus erat,
+               pretium id nunc non, finibus fermentum risus. Nullam porttitor quis
+               justo at euismod."
+            </li>
+         </ol>
+      </div>
+   </body>
+</html>

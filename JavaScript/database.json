@@ -1,0 +1,22 @@
+{
+  "games": [
+    {
+      "name": "admin",
+      "surname": "admin",
+      "age": 24,
+      "score": 666,
+      "hits": 20,
+      "fails": 5,
+      "id": 1
+    },
+    {
+      "name": "Alberto",
+      "surname": "Martos",
+      "age": "24",
+      "score": "230",
+      "hits": "13",
+      "fails": "6",
+      "id": 2
+    }
+  ]
+}
