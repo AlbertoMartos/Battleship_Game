@@ -6,9 +6,7 @@ Battleship (also known as Battleships or Sea Battle) is a strategy type guessing
 
 ## Authors
 
-- [@AlbertoMartos](https://www.github.com/albertomartos) -> Logical Part - JavaScript - HTML - CSS
-
-- [@Carabut1](https://github.com/carabut1) -> HTML - CSS - CyberPunk.css
+- [@AlbertoMartos](https://www.github.com/albertomartos) -> JavaScript - HTML - CSS
 
 ## Demo
 
